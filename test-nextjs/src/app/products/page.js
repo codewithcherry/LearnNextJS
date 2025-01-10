@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Products = () => {
@@ -10,6 +11,7 @@ const Products = () => {
         <li>Product 4</li>
         <li>Product 5</li>
         <li>Product 6</li>
+        <Link href={'/products/7?lang=en'}>product 7</Link>
       </ul>      
     </div>
   )
