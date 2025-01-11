@@ -1,11 +1,19 @@
+'use client';
+
 import React from 'react'
-import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 const NotFound = () => {
+
+  const router=useRouter();
+
+  const handleHome=()=>{
+    router.push('/')
+  }
   return (
     <div>
       <h2>Page not found. try again later.</h2>
-      <Link href={'/'}>Go to home</Link>
+      <button onClick={handleHome}>Go to Home</button>
     </div>
   )
 }
