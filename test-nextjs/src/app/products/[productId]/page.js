@@ -14,7 +14,7 @@ const ProductView = ({params,searchParams}) => {
     router.push('/')
   }
 
-  if(productId>1000){
+  if(productId>1000 || productId<0){
     redirect('/')
   }
   return (
